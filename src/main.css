@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+@import url('https://fonts.googleapis.com/css2?&family=Inter&display=swap');
+
+.gradient {
+    background: rgb(20,16,68);
+    background: linear-gradient(38deg, rgba(20,16,68,1) 0%, rgba(13,10,44,1) 9%, rgba(0,0,0,1) 48%, rgba(71,20,62,1) 91%, rgba(116,33,101,1) 100%);
+}
