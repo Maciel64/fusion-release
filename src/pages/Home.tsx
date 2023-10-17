@@ -6,7 +6,7 @@ import bannerMobile from "../assets/img/bannerMobile.jpeg";
 
 
 export default ({ setUIPhase }: any) => {
-  const [width, setWidth] = useState(window.innerWidth)
+  const [width] = useState(window.innerWidth)
   const onButtonClicked = () => {
     setUIPhase("band");
   };
