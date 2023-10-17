@@ -2,14 +2,16 @@ import { useState, useEffect, useRef } from "react"
 import { Button } from "../components/Form"
 import Title from "../components/Title"
 
-import video from "../assets/video/teste.mp4"
-import video2 from "../assets/video/success_professional.mp4"
+import greetings from "../assets/video/boasvindas.mp4"
+import professionalVideo from "../assets/video/profissional.mp4"
+import partnerVideo from "../assets/video/donodeclinica_erro.mp4"
+import ownerVideo from "../assets/video/donodeclinica.mp4"
 
 
 import VideoCard from "../components/VideoCard"
 import Card from "../components/Card"
 
-export default ({ setUIPhase }: any) => {
+export default ({ setUIPhase, setGradient }: any) => {
     const [type, setType] = useState("whoAreYou")
 
     const videoRef = useRef<null | HTMLVideoElement>(null)
@@ -17,20 +19,27 @@ export default ({ setUIPhase }: any) => {
 
     const typesMap: any = {
         whoAreYou: {
-            text: "Quem é você?",
-            video: video
+            text: "Escolha a opção que mais se encaixa para você.",
+            video: greetings,
+            gradient: "gradient"
         },
         professional: {
             text: "Profissional da saúde",
-            video: video2
+            video: professionalVideo,
+            color: "#f0e211",
+            gradient: "gradient--to-yellow"
         },
         owner: {
             text: "Dono de clínica",
-            video: video2
+            video: partnerVideo,
+            color: "#f3f3f3",
+            gradient: "gradient--to-white"
         },
         partner: {
             text: "Parceiro",
-            video: video2
+            video: ownerVideo,
+            color: "#911d80",
+            gradient: "gradient--to-pink"
         },
     }
 
@@ -48,10 +57,12 @@ export default ({ setUIPhase }: any) => {
         setType(type)
 
         videoRef.current?.play()
+        setGradient(typesMap[type].gradient)
 
         setTimeout(() => {
+            setGradient("gradient")
             setUIPhase("home")
-        }, 20000)
+        }, 15000)
     }
 
     return (

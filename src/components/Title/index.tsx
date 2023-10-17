@@ -1,7 +1,7 @@
 export default ({ children }: any) => {
   return (
     <>
-      <h1 className="text-white text-3xl font-title">{children}</h1>
+      <h1 className="text-white text-xl font-title text-center w-[80vw]">{children}</h1>
     </>
   );
 };
