@@ -76,8 +76,8 @@ export default ({ setUIPhase, setGradient }: any) => {
             {type === "whoAreYou" && (
                 <div className="flex gap-5 flex-col p-5 opacity-0 transition-opacity" ref={buttonsContainerRed}>
                     <Button text="Profissional da saúde" onClick={() => onButtonClicked("professional")} style={{ border: "1px solid #f1e60e" }} />
-                    <Button text="Dono de clínica" onClick={() => onButtonClicked("owner")} style={{ border: "1px solid #742165" }} />
-                    <Button text="Parceiro" onClick={() => onButtonClicked("partner")} style={{ border: "1px solid #ffffff" }} />
+                    <Button text="Parceiro" onClick={() => onButtonClicked("owner")} style={{ border: "1px solid #742165" }} />
+                    <Button text="Dono de clínica" onClick={() => onButtonClicked("partner")} style={{ border: "1px solid #ffffff" }} />
                 </div>
             )}
         </>
