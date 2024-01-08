@@ -4,7 +4,7 @@ import Form, { Input } from "@/components/Form";
 import Title from "@/components/Title";
 import { Button } from "@/components/Form";
 
-export default () => {
+const CheckIn = () => {
   const data = useRef(null);
 
   const onButtonClick = () => {};
@@ -21,3 +21,5 @@ export default () => {
     </>
   );
 };
+
+export default CheckIn;

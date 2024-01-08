@@ -2,7 +2,7 @@ import { Button } from "@/components/Form";
 
 import bannerMobile from "@/assets/img/bannerMobile.jpeg";
 
-export default ({ setUIPhase }: any) => {
+const Home = ({ setUIPhase }: any) => {
   const onButtonClicked = () => {
     setUIPhase("band");
   };
@@ -25,3 +25,5 @@ export default ({ setUIPhase }: any) => {
     </>
   );
 };
+
+export default Home;

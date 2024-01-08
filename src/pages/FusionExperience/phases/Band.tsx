@@ -10,7 +10,7 @@ import ownerVideo from "@/assets/video/branca_.mp4";
 import VideoCard from "@/components/VideoCard";
 import Card from "@/components/Card";
 
-export default ({ setUIPhase, setGradient }: any) => {
+const Band = ({ setUIPhase, setGradient }: any) => {
   const [type, setType] = useState("whoAreYou");
 
   const videoRef = useRef<null | HTMLVideoElement>(null);
@@ -97,3 +97,5 @@ export default ({ setUIPhase, setGradient }: any) => {
     </>
   );
 };
+
+export default Band;
