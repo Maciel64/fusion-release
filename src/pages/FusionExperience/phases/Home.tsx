@@ -1,7 +1,6 @@
-import { Button } from "../components/Form";
+import { Button } from "@/components/Form";
 
-import bannerMobile from "../assets/img/bannerMobile.jpeg";
-
+import bannerMobile from "@/assets/img/bannerMobile.jpeg";
 
 export default ({ setUIPhase }: any) => {
   const onButtonClicked = () => {
@@ -10,11 +9,11 @@ export default ({ setUIPhase }: any) => {
 
   return (
     <>
-        <img
-          src={bannerMobile}
-          alt="Banner Que saúde o futuro nos reserva?"
-          className="h-[80vh] justify-self-start"
-        />
+      <img
+        src={bannerMobile}
+        alt="Banner Que saúde o futuro nos reserva?"
+        className="h-[80vh] justify-self-start"
+      />
 
       <div className="flex w-[300px]">
         <Button

@@ -1,16 +1,13 @@
 import { useRef } from "react";
 
-import Form, { Input } from "../components/Form";
-import Title from "../components/Title"
-import { Button } from "../components/Form";
-
+import Form, { Input } from "@/components/Form";
+import Title from "@/components/Title";
+import { Button } from "@/components/Form";
 
 export default () => {
   const data = useRef(null);
 
-  const onButtonClick = () => {
-
-  }
+  const onButtonClick = () => {};
 
   return (
     <>

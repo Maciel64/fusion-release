@@ -1,26 +1,21 @@
-import { useState } from "react"
+import { useNavigate } from "react-router-dom";
+import { Button } from "./components/Form";
 
-import Home from "./pages/Home"
-import Band from "./pages/Band"
-
-export type TUIPhases = "home" | "band"
-
-export default () => {
-  const [UIPhase, setUIPhase] = useState<TUIPhases>("home")
-  const [gradient, setGradient] = useState("gradient")
-
-  const UIPhases = {
-    home: <Home setUIPhase={setUIPhase}  />,
-    band: <Band setUIPhase={setUIPhase} setGradient={setGradient} />,
-    qrcode: undefined,
-    success: undefined
-  }
+const App = () => {
+  const navigate = useNavigate();
 
   return (
-    <>
-      <div className={`h-[100vh] flex justify-center items-center flex-col gap-8 ${gradient}`}>
-          {UIPhases[UIPhase]}
-      </div>
-    </>
-  )
-}
+    <div className="p-6 grid grid-cols-3 gap-5 place-items-center">
+      <Button
+        text="Fusion Experience"
+        onClick={() => navigate("/fusionExperience")}
+      />
+      <Button
+        text="Evento StartUps"
+        onClick={() => navigate("/startUpEvent")}
+      />
+    </div>
+  );
+};
+
+export default App;
