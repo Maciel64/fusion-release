@@ -12,7 +12,7 @@ const App = () => {
       />
       <Button
         text="Evento StartUps"
-        onClick={() => navigate("/startUpEvent")}
+        onClick={() => navigate("/startUpsEvent")}
       />
     </div>
   );

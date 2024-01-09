@@ -4,7 +4,7 @@ import { ICardProps, ICardTitleProps } from "./types"
 export default ({ children }: ICardProps) => {
   return (
     <>
-      <div className="bg-red-50 rounded-md bg-opacity-30 backdrop-blur-sm p-4">
+      <div className="bg-red-50 rounded-md bg-opacity-30 backdrop-blur-sm p-4 w-fit">
         {children}
       </div>
     </>

@@ -1,6 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
+
 import FusionExperience from "./pages/FusionExperience";
+import StartUpsEvent from "./pages/StartUpsEvent";
 
 const routes = createBrowserRouter([
   {
@@ -10,6 +12,10 @@ const routes = createBrowserRouter([
   {
     path: "/fusionExperience",
     element: <FusionExperience />,
+  },
+  {
+    path: "/startUpsEvent",
+    element: <StartUpsEvent />,
   },
 ]);
 
