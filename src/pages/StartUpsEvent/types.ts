@@ -3,7 +3,8 @@ export interface ISelectCompanyProps {
 }
 
 export type TCompany = {
-  name: string
+  name: string,
+  video: string
 };
 
 export type TUIPhases = "home" | "selectCompany";
