@@ -33,7 +33,7 @@ export const Button = ({ text, onClick, style }: IButtonProps) => {
   return (
     <>
       <button
-        className="py-2 font-bold h-[44px] w-[300px] rounded-full font-display bg-[#051F2B] text-white flex-grow"
+        className="py-2 font-bold h-[44px] w-[300px] rounded-full font-display bg-orange-600 text-white flex-grow"
         style={style}
         onClick={onClick}
       >
