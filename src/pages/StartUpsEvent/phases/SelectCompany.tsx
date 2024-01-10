@@ -20,6 +20,8 @@ import EVIS from "../assets/videos/Evis Saúde.mp4";
 import MEDIC from "../assets/videos/MEDIC.mp4";
 import Careforce from "../assets/videos/My CareForce.mp4";
 import WAYABA from "../assets/videos/WayABA.mp4";
+import LetraA from "../assets/videos/Letra A.mp4";
+import Rapport from "../assets/videos/Rapport.mp4";
 
 const companiesMap: TCompany[] = [
   {
@@ -62,6 +64,14 @@ const companiesMap: TCompany[] = [
     name: "BE MOVE",
     video: BEMOVE,
   },
+  {
+    name: "Letra A",
+    video: LetraA,
+  },
+  {
+    name: "Rapport",
+    video: Rapport,
+  },
 ];
 
 const SelectCompany = ({ setUIPhase }: ISelectCompanyProps) => {
@@ -94,10 +104,7 @@ const SelectCompany = ({ setUIPhase }: ISelectCompanyProps) => {
       }}
       className="flex flex-col gap-10"
     >
-      <div
-        className="flex flex-col items-center gap-5"
-       
-      >
+      <div className="flex flex-col items-center gap-5">
         <Card>
           <VideoCard src={company?.video} reference={videoRef} />
         </Card>
